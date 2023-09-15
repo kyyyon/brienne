@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navbar-sticky {
+        @apply sticky;
+    }
+    .landmark-info-div {
+        @apply text-gray-200 absolute bottom-0 right-0 m-6 max-h-full text-right sm:w-[35vw];
+    }
+    .landmark-description-box {
+        @apply relative right-0 max-h-[50vh] overflow-auto rounded-lg bg-black bg-opacity-40 px-5 py-2 font-semibold shadow-2xl backdrop-blur-sm ;
+    }
+    .footer-theme {
+        @apply bg-gradient-to-r from-red-400 to-pink-400 shadow px-2;
+    }
+    .photo-gallery-item {
+        @apply rounded-2xl transition duration-300 hover:scale-105;
+    }
+    .photo-gallery-background {
+        @apply grid grid-cols-cards gap-5 bg-gradient-to-r from-green-400 to-blue-600 p-5;
+    }
+    .landmark-title {
+        @apply overflow-clip py-5 pr-5 text-6xl font-extrabold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] shadow-black;
+    }
+    .landmark-banner {
+        @apply min-h-[100%] bg-[length:100%_100%] bg-center;
+    }
+    .navbar-body {
+        @apply absolute left-0 top-0 z-50 w-full bg-transparent p-4 backdrop-blur-3xl backdrop-saturate-150;    
+    }
+    .navbar-div {
+        @apply container mx-auto flex items-center justify-between;
+    }
+    .navbar-home-icon {
+        @apply z-50 bg-gradient-to-r from-pink-600 to-green-700 bg-clip-text text-center font-extrabold leading-3 text-transparent;
+    }
+    .navbar-right-menu {
+        @apply flex space-x-6 font-semibold;
+    }
+    .navbar-right-menu-item {
+        @apply text-white hover:text-gray-300;
+    }
+    .footer-div-outer {
+        @apply mx-auto w-full max-w-screen-xl p-4 md:py-8;
+    }
+    .footer-div-inner {
+        @apply sm:flex sm:items-center sm:justify-between;
+    }
+    .footer-home-link {
+        @apply mb-4 flex items-center sm:mb-0;
+    }
+    .footer-item-about {
+        @apply mr-4 hover:underline md:mr-6;
+    }
+    .footer-hover {
+        @apply hover:underline;
+    }
+    .polaroid-gallery-maintitle {
+        @apply bg-gradient-to-r from-green-400 to-blue-600 px-[10vw] py-10 text-left text-4xl font-extrabold text-gray-100;
+    }
+    .polaroid-gallery-div {
+        @apply gap-4 space-y-4 bg-gradient-to-r from-green-400 to-blue-600 px-[10vw] text-center text-2xl grid p-4 grid-cols-cards lg:grid-cols-3 pb-24;
+    }
+    .polaroid-items {
+        @apply relative break-inside-avoid-column bg-white p-4 align-middle shadow-2xl sm:grayscale transition duration-300 hover:z-40 hover:rotate-0 hover:scale-110 sm:hover:scale-125 hover:grayscale-0;
+    }
+    .polaroid-rotate-negative {
+        @apply sm:-rotate-6;
+    }
+    .polaroid-rotate-positive {
+        @apply sm:rotate-6;
+    }
+    .polaroid-image {
+        @apply w-full;
+    }
+    .polaroid-title {
+        @apply pt-4 font-mono font-bold text-sm sm:text-2xl;
+    }
+    .banner-main-title {
+        @apply bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent text-5xl sm:text-8xl;
+    }
+    .banner-sub-title {
+        @apply bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-lg font-extrabold text-transparent sm:text-3xl;
+    }
+    .banner-title-div {
+        @apply text-center text-white;
+    }
+    .footer-item-left {
+        @apply self-center whitespace-nowrap text-2xl font-bold bg-gradient-to-r from-pink-600 to-green-600 bg-clip-text text-transparent;
+    }
+    .footer-item-middle {
+        @apply block text-sm text-gray-500 sm:text-center;
+    }
+    .footer-item-right {
+        @apply mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 sm:mb-0;
+    }
+    .landmark-front {
+        @apply h-[100vh] bg-gradient-to-r from-green-900 to-blue-900;
+    }
+    .navbar-calendar {
+     @apply text-black hover:text-gray-300;
+    }
+    .cal-background {
+    @apply grid min-h-screen gap-4 bg-gradient-to-r from-green-400 to-blue-600 pt-20 p-4 text-slate-600 md:gap-6 lg:gap-6;
+    }
+    .cal-font {
+    @apply bg-gradient-to-br from-blue-500 to-violet-700 bg-clip-text pb-4 text-3xl font-bold text-transparent sm:text-5xl md:pb-6;
+    }
+    .cal-title {
+    @apply grid place-items-center rounded-t-lg p-3 uppercase text-indigo-50 shadow;
+    }
+    .cal-indigo {
+    @apply bg-indigo-500 opacity-100;
+    }
+    .cal-pink {
+    @apply bg-pink-600 opacity-100;
+    }
+    .cal-green {
+    @apply bg-green-600 opacity-100;
+    }
+    .cal-yellow {
+    @apply bg-yellow-500 opacity-100;
+    }
+    .cal-button {
+    @apply rounded-md px-4 py-2 text-center font-bold text-indigo-50 shadow-2xl shadow-indigo-200 ring ring-offset-0 transition-all hover:shadow-none focus:outline-none focus:ring-offset-2;
+    }
+    .cal-button-indigo {
+    @apply ring-indigo-500;
+    }
+    .cal-button-pink {
+    @apply ring-pink-600;
+    }
+    .cal-button-green {
+    @apply ring-green-600;
+    }
+    .cal-button-yellow {
+    @apply ring-yellow-500;
+    }
+    .cal-card {
+    @apply flex h-[100%] flex-col gap-4 p-4 md:gap-6 md:p-6 lg:p-8;
+    }
+    .cal-section {
+    @apply mdsection:gap-6 grid grid-cols-cards items-start gap-4 lg:gap-8;
+    }
+    .cal-main {
+    @apply mx-auto w-full max-w-6xl;
+    }
+    .cal-month {
+    @apply text-sm;
+    }
+    .cal-day {
+    @apply text-3xl font-bold;
+    }
+    .cal-grid-gap {
+    @apply flex grow flex-col gap-1;
+    }
+    .cal-event-font {
+    @apply text-2xl font-bold;
+    }
+    .cal-details {
+    @apply flex cursor-pointer items-center gap-1 text-slate-400;
+    }
+    .cal-details-font {
+    @apply pointer-events-none transition-transform;
+    }
+    .cal-info {
+    @apply text-slate-400 bg-opacity-75;
+    }
+    .cal-article {
+    @apply flex flex-col rounded-lg bg-white bg-opacity-75 sm:hover:scale-110 transition-all hover:scale-105;
+    }
+    .cal-header {
+    @apply grid place-items-center content-center p-4 text-center;
+    }
+    .contacts-name {
+        @apply mb-1 text-2xl font-bold tracking-tight text-gray-900;
+    }
+    .contacts-socials-container {
+        @apply mt-4 flex justify-center space-x-4;
+    }
+    .contacts-socials-facebook {
+        @apply text-[#39569c] hover:text-gray-900;
+    }
+    .contacts-socials-twitter {
+        @apply text-[#00acee] hover:text-gray-900;
+    }
+    .contacts-socials-github {
+        @apply text-gray-900 hover:text-gray-900;
+    }
+    .contacts-svg-size {
+        @apply h-6 w-6;
+    }
+    .contacts-member-div {
+        @apply rounded-2xl bg-white bg-opacity-75 py-14 text-center text-gray-500 shadow-2xl duration-150 hover:scale-125;
+    }
+    .concacts-group-div {
+        @apply grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-16;
+    }
+    .contacts-background {
+        @apply min-h-screen w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-[5vh] pt-14;
+    }
+    .contacts-profile-picture {
+        @apply mx-auto mb-4 h-36 w-36 rounded-full transition-all duration-1000 hover:rounded-3xl;
+    }
+    .contacts-inner-div {
+        @apply mx-auto max-w-screen-xl px-4 py-8 text-center lg:px-6 lg:py-16;
+    }
+    .contacts-innermost-div {
+        @apply mx-auto mb-8 max-w-screen-sm lg:mb-16;
+    }
+    .contacts-title {
+        @apply mb-4 text-4xl font-extrabold tracking-tight text-white;
+    }
+    .contacts-subtitle {
+        @apply font-semibold text-white sm:text-xl;
+    }
+    .indiv-bg {
+        @apply bg-gradient-to-r from-red-400 to-pink-500;
+    }
+    .indiv-container {
+        @apply container mx-auto px-4 md:px-8;
+    }
+    .indiv-text {
+        @apply mt-6 w-full pl-4 text-center md:mt-16 md:w-max md:pl-10 md:text-left;
+    }
+    .indiv-white {
+        @apply text-white;
+    }
+    .indiv-pink {
+        @apply text-pink-600;
+    }
+    .indiv-semibold {
+        @apply font-semibold;
+    }
+    .indiv-bold {
+        @apply font-bold;
+    }
+    .indiv-xl {
+        @apply text-xl;
+    }
+    .indiv-center {
+        @apply text-center;
+    }
+    .indiv-column {
+        @apply flex flex-col items-center justify-center md:flex-row md:justify-between;
+    }
+    .indiv-font-type {
+        @apply mb-4 text-lg font-semibold md:text-xl;
+    }
+    .indiv-font-info {
+        @apply mt-4 pb-10 text-base md:mt-6 md:text-lg;
+    }
+    .indiv-button {
+        @apply rounded-md bg-pink-700 px-8 py-4 hover:bg-pink-300;
+    }
+    .indiv-contacts {
+        @apply mb-8 mt-12 flex items-center gap-4;
+    }
+    .indiv-contacts-marg {
+        @apply flex space-x-3;
+    }
+    .indiv-picture {
+        @apply relative mt-10 md:mt-10;
+    }
+    .indiv-picture-anim {
+        @apply w-full pt-40 transition duration-300 hover:scale-110 md:pt-0;
+    }
+    .indiv-section {
+        @apply max-w-7xl mx-auto px-5 my-6;
+    }
+    .indiv-contri {
+        @apply text-3xl mb-10;
+    }
+    .indiv-contri-col {
+        @apply my-16 flex flex-col md:flex-row justify-around items-center gap-12;
+    }
+    .indiv-icon-size {
+        @apply mb-12 mx-auto;
+    }
+   
+
+    
+   
+   
+
+}
